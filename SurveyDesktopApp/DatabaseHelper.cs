@@ -71,7 +71,6 @@ namespace SurveyDesktopApp
         public static int GetSurveyCount()
         {
             int count = 0;
-            string connectionString = "Server=DESKTOP-OTAPUVT;Database=SurveyDB;Trusted_Connection=True;";
 
             using (var conn = new SqlConnection(connectionString))
             {

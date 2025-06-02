@@ -60,7 +60,7 @@ namespace SurveyDesktopApp
 
             if (string.IsNullOrWhiteSpace(txtFname.Text) || string.IsNullOrWhiteSpace(txtMail.Text))
             {
-                MessageBox.Show("Please enter name and email.");
+                MessageBox.Show("Please enter your full names and email.");
                 return false;
             }
 
