@@ -87,7 +87,6 @@ namespace SurveyDesktopApp
         public static int GetMaxAge()
         {
             int maxAge = 0;
-            string connectionString = "Server=DESKTOP-OTAPUVT;Database=SurveyDB;Trusted_Connection=True;";
 
             using (var conn = new SqlConnection(connectionString))
             {
@@ -109,8 +108,6 @@ namespace SurveyDesktopApp
         public static int GetMinAge()
         {
             int minAge = 0;
-            string connectionString = "Server=DESKTOP-OTAPUVT;Database=SurveyDB;Trusted_Connection=True;";
-
             using (var conn = new SqlConnection(connectionString))
             {
                 conn.Open();
@@ -131,7 +128,6 @@ namespace SurveyDesktopApp
         public static double GetAverageAge()
         {
             double avgAge = 0;
-            string connectionString = "Server=DESKTOP-OTAPUVT;Database=SurveyDB;Trusted_Connection=True;";
 
             using (var conn = new SqlConnection(connectionString))
             {
@@ -154,9 +150,6 @@ namespace SurveyDesktopApp
         {
             int total = 0;
             int foodCount = 0;
-
-            string connectionString = "Server=DESKTOP-OTAPUVT;Database=SurveyDB;Trusted_Connection=True;";
-
             using (var conn = new SqlConnection(connectionString))
             {
                 conn.Open();
@@ -179,7 +172,6 @@ namespace SurveyDesktopApp
         public static double GetAverageRating(string columnName)
         {
             double avg = 0;
-            string connectionString = "Server=DESKTOP-OTAPUVT;Database=SurveyDB;Trusted_Connection=True;";
 
             using (var conn = new SqlConnection(connectionString))
             {
